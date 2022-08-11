@@ -41,7 +41,8 @@
                    <h1>Bakuun</h1>
                 </div>
                 <div class="row">
-                    <a href="{{url('xml_to_json')}}">XML TO JSON</a>
+                    <a href="{{url('xml_to_json')}}">CLICK XML TO JSON</a>
+                    {{ \HTML::link_to_action('users@login') }}
                 </div>
 
             </div>
