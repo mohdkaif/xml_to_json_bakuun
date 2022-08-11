@@ -39,13 +39,12 @@ class XmlToJsonController extends Controller
             }
         }
 
-        return response()->json(['status' => 200, 'data' => $companies]);
+        return response()->json(['status' => 200,'message'=>'data fetch', 'data' => $companies]);
     }
 
     public function restApi(Request $request)
     {
         $companies = Company::get();
-        //dd($companies);
         return response()->json(['status'=>400,'data'=>$companies]);
     }
 }
